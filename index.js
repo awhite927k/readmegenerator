@@ -15,7 +15,7 @@ const questions = [
     'Include a link to your deployed application if one exists'
 ]
 
-const licenses = ['Apache license 2.0', 'Boost Software License 1.0', 'BSD 2-clause "Simplified" license', 'BSD 3-clause "New" or "Revised" license', 'Creative Commons Zero', 'Creative Commons Zero v1.0 Universal', 'Creative Commons Attribution 4.0', 'Creative Commons Attribution ShareAlike 4.0', 'Eclipse Public License 1.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU General Public License v3.0', 'GNU Lesser General Public License v3.0', 'IBM v1.0', 'ISC', 'MIT', 'Mozilla Public License 2.0', 'The Perl License', 'SIL Open Font License 1.1', 'The Unlicense', 'zLib License']
+const licenses = ['Apache license 2.0', 'GNU GPLv3', 'Boost Software License 1.0', 'The Unlicense', 'MIT']
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -65,9 +65,8 @@ function init() {
         },
         {
             type: 'input',
-            message: `${questions[8]} If not, enter 'N/a'!`,
+            message: questions[7],
             name: 'applink',
-            default: 'N/a'
         },
     ])
         .then((response) => {
